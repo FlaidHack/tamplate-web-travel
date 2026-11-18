@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import { Plane } from "lucide-react";
+import Link from "next/link";
 import SearchCard from "./SearchCard";
-import { IMG } from "../data/site";
+import { IMG, PROMO } from "../data/site";
 
 export default function Hero() {
   return (
@@ -26,6 +27,16 @@ export default function Hero() {
             </h1>
             <p className="mt-4 text-[14px] md:text-[17px] xl:mt-6 xl:text-[20px]">Temukan dan ceritakan pengalamanmu menjelajah Indonesia, dari Sabang sampai Merauke.</p>
           </div>
+
+          <Link
+            href={PROMO.href}
+            aria-label={`${PROMO.label} ${PROMO.value}, ${PROMO.note}`}
+            className="absolute bottom-[88px] right-4 z-10 hidden size-[88px] -rotate-6 flex-col items-center justify-center rounded-full bg-scarlet text-center text-white shadow-[0_12px_32px_-6px_rgba(235,46,51,0.55)] transition-transform hover:scale-105 sm:flex lg:bottom-[172px] lg:right-4 lg:size-[104px]"
+          >
+            <span className="text-[9px] font-semibold tracking-[0.2em]">{PROMO.label}</span>
+            <span className="font-display text-[26px] font-semibold leading-none lg:text-[30px]">{PROMO.value}</span>
+            <span className="mt-0.5 text-[9px] font-medium">{PROMO.note}</span>
+          </Link>
         </div>
 
         <SearchCard />

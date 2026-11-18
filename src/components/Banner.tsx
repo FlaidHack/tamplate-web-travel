@@ -7,7 +7,7 @@ export default function Banner() {
     <section id="pesan" className="wrap-sec mt-24 scroll-mt-24 lg:mt-[143px]">
       <div className="flex items-center justify-between gap-4">
         <h2 className="font-display text-[22px] font-medium leading-[1.2] md:text-[30px] xl:text-[38px]">Pesan tiket dan berangkat sekarang!</h2>
-        <a href={waLink("Halo Jelajah Nusa, saya mau pesan tiket.")} className="btn h-12 shrink-0 px-6 font-display text-[16px] xl:px-[34px]">Pesan sekarang</a>
+        <a href={waLink("Halo Jelajah Nusa, saya mau pesan tiket.")} className="btn-scarlet h-12 shrink-0 px-6 font-display text-[16px] xl:px-[34px]">Pesan sekarang</a>
       </div>
       <div className="relative mt-6 aspect-[16/10] overflow-hidden rounded-[28px] sm:aspect-[1200/655] xl:mt-[44px]">
         <Photo src={IMG.banner} alt="Pantai dan resort dari udara" />

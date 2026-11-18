@@ -15,4 +15,5 @@
   .wrap-sec { @apply mx-auto w-full max-w-[1440px] px-5 md:px-8 lg:px-[min(8.333vw,120px)]; }
   .h-display { @apply font-display font-semibold leading-[1.2] text-[#181818]; }
   .btn { @apply inline-flex items-center justify-center rounded-[10px] bg-brand font-medium text-white transition-colors hover:bg-brand-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand; }
+  .btn-scarlet { @apply inline-flex items-center justify-center rounded-[10px] bg-scarlet font-medium text-white transition-colors hover:bg-scarlet-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-scarlet; }
 }

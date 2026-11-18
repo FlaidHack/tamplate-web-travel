@@ -46,7 +46,7 @@ export default function Navbar() {
         </nav>
         <div className="hidden items-center gap-10 justify-self-end md:flex">
           <a href="#" className="text-[14px] text-[#A8A8A8] transition-colors hover:text-[#1B1B1B]">Masuk</a>
-          <a href="#" className="btn h-[38px] px-[17px] text-[14px]">Daftar</a>
+          <a href="#" className="btn-scarlet h-[38px] px-[17px] text-[14px]">Daftar</a>
         </div>
         <button className="justify-self-end md:hidden" onClick={() => setOpen(!open)} aria-label="Menu" aria-expanded={open}>
           {open ? <X size={24} /> : <Menu size={24} />}
@@ -56,7 +56,7 @@ export default function Navbar() {
         <div className="border-t border-[#EEE] bg-white md:hidden">
           <div className="wrap flex flex-col gap-5 py-6 text-[16px]">
             {links.map((l) => <Link key={l.id} href={l.href} className={active === l.id ? "font-medium" : "text-[#7A7A7A]"}>{l.label}</Link>)}
-            <a href="#" className="btn h-[42px] w-fit px-6 text-[14px]">Daftar</a>
+            <a href="#" className="btn-scarlet h-[42px] w-fit px-6 text-[14px]">Daftar</a>
           </div>
         </div>
       )}

@@ -52,7 +52,7 @@ export default function BookingPanel({ p, className = "" }: { p: TourPackage; cl
         ) : (
           <input type="date" className={field} value={date} min={minDate} onChange={(e) => setDate(e.target.value)} aria-label="Tanggal berangkat" />
         )}
-        {err.date && <p className="mt-1.5 text-[12px] text-red-500">{err.date}</p>}
+        {err.date && <p className="mt-1.5 text-[12px] text-scarlet">{err.date}</p>}
       </div>
 
       <div className="mt-5 divide-y divide-[#F2F2F2]">
@@ -71,18 +71,18 @@ export default function BookingPanel({ p, className = "" }: { p: TourPackage; cl
         ))}
       </div>
       <p className="text-[12px] text-[#8A8A93]">Maksimal {p.maxPax} peserta{p.minPax > 1 ? `, minimal ${p.minPax}` : ""}.</p>
-      {err.pax && <p className="mt-1 text-[12px] text-red-500">{err.pax}</p>}
+      {err.pax && <p className="mt-1 text-[12px] text-scarlet">{err.pax}</p>}
 
       <div className="mt-5 space-y-3">
-        <div><input className={field} placeholder="Nama lengkap" value={nama} onChange={(e) => setNama(e.target.value)} aria-label="Nama lengkap" />{err.nama && <p className="mt-1 text-[12px] text-red-500">{err.nama}</p>}</div>
-        <div><input className={field} placeholder="Nomor WhatsApp" inputMode="tel" value={hp} onChange={(e) => setHp(e.target.value)} aria-label="Nomor WhatsApp" />{err.hp && <p className="mt-1 text-[12px] text-red-500">{err.hp}</p>}</div>
+        <div><input className={field} placeholder="Nama lengkap" value={nama} onChange={(e) => setNama(e.target.value)} aria-label="Nama lengkap" />{err.nama && <p className="mt-1 text-[12px] text-scarlet">{err.nama}</p>}</div>
+        <div><input className={field} placeholder="Nomor WhatsApp" inputMode="tel" value={hp} onChange={(e) => setHp(e.target.value)} aria-label="Nomor WhatsApp" />{err.hp && <p className="mt-1 text-[12px] text-scarlet">{err.hp}</p>}</div>
       </div>
 
       <div className="mt-5 flex items-end justify-between border-t border-[#F2F2F2] pt-4">
         <span className="text-[14px] text-[#8A8A93]">Estimasi total</span>
         <span className="font-display text-[24px] font-semibold">{rupiahFull(total)}</span>
       </div>
-      <button type="button" onClick={send} className="btn mt-4 h-12 w-full rounded-xl text-[15px]">Pesan via WhatsApp</button>
+      <button type="button" onClick={send} className="btn-scarlet mt-4 h-12 w-full rounded-xl text-[15px]">Pesan via WhatsApp</button>
       <p className="mt-3 text-center text-[12px] text-[#8A8A93]">Belum ada pembayaran. Tim kami konfirmasi lewat WhatsApp.</p>
     </aside>
   );

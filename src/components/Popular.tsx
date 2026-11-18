@@ -15,7 +15,7 @@ export default function Popular() {
           <Link key={p.name} href={`/paket?tujuan=${encodeURIComponent(p.q)}`} className="group block">
             <div className="relative aspect-square overflow-hidden rounded-[24px]">
               <Photo src={p.image} alt={p.name} className="transition-transform duration-500 group-hover:scale-105" />
-              <span className="absolute right-3 top-3 flex h-[27px] items-center rounded-lg bg-white px-3 text-[11px] font-semibold xl:right-4 xl:top-4 xl:text-[12px]">{p.discount}% OFF</span>
+              <span className="absolute right-3 top-3 flex h-[27px] items-center rounded-lg bg-scarlet px-3 text-[11px] font-semibold text-white xl:right-4 xl:top-4 xl:text-[12px]">{p.discount}% OFF</span>
             </div>
             <h3 className="mt-4 text-[17px] font-semibold leading-[30px] xl:mt-[21px] xl:text-[20px]">{p.name}</h3>
             <div className="mt-1.5"><Pin text={p.location} /></div>

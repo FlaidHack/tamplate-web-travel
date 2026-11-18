@@ -20,7 +20,7 @@ export default function Newsletter() {
         <input type="email" value={email} onChange={(e) => { setEmail(e.target.value); setState("idle"); }} placeholder="Masukkan alamat email" aria-label="Alamat email" className="min-w-0 flex-1 bg-transparent text-[12px] outline-none placeholder:text-[#B0B0B5]" />
         <button type="submit" aria-label="Kirim" className="grid size-8 place-items-center rounded-full bg-brand text-white transition-colors hover:bg-brand-dark"><Send size={14} /></button>
       </form>
-      <p role="status" className={`mt-2 text-[12px] ${state === "err" ? "text-red-500" : "text-brand"}`}>
+      <p role="status" className={`mt-2 text-[12px] ${state === "err" ? "text-scarlet" : "text-brand"}`}>
         {state === "ok" ? "Terima kasih, kamu sudah terdaftar!" : state === "err" ? "Format email belum benar." : ""}
       </p>
     </div>

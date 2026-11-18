@@ -21,6 +21,7 @@ export interface TourPackage {
   departures: string[]; // jadwal open trip (YYYY-MM-DD); private trip bebas pilih tanggal
   minPax: number;
   maxPax: number;
+  seatsLeft?: number;
   featured?: boolean;
 }
 
@@ -84,7 +85,7 @@ export const packages: TourPackage[] = [
       "Snorkeling patung bawah laut dan area penyu.",
       "Sunrise, sarapan, kembali ke Lombok.",
     ],
-    departures: ["2026-12-12", "2026-12-26", "2027-01-16", "2027-02-06"], minPax: 1, maxPax: 16,
+    departures: ["2026-12-12", "2026-12-26", "2027-01-16", "2027-02-06"], minPax: 1, maxPax: 16, seatsLeft: 3,
   },
   {
     slug: "mandalika-beach-escape", name: "Mandalika Beach Escape", destination: "Mandalika", province: "Nusa Tenggara Barat", location: "Lombok Tengah, NTB",
@@ -106,7 +107,7 @@ export const packages: TourPackage[] = [
       "Jemput di Malang, menuju Cemoro Lawang, istirahat sebelum berangkat dini hari.",
       "Jeep: Penanjakan, Kawah Bromo, Pasir Berbisik, lalu kembali ke Malang.",
     ],
-    departures: ["2026-12-04", "2026-12-11", "2026-12-18", "2027-01-08", "2027-01-15"], minPax: 1, maxPax: 24,
+    departures: ["2026-12-04", "2026-12-11", "2026-12-18", "2027-01-08", "2027-01-15"], minPax: 1, maxPax: 24, seatsLeft: 4,
   },
   {
     slug: "raja-ampat-island-hopping", name: "Raja Ampat Island Hopping", destination: "Raja Ampat", province: "Papua Barat Daya", location: "Papua Barat Daya",
@@ -144,7 +145,7 @@ export const packages: TourPackage[] = [
       "Sunrise Punthuk Setumbang, Candi Borobudur, Mendut, lalu Prambanan.",
       "Keraton, Taman Sari, Malioboro, antar ke bandara atau stasiun.",
     ],
-    departures: ["2026-12-05", "2026-12-12", "2026-12-26", "2027-01-09"], minPax: 1, maxPax: 20,
+    departures: ["2026-12-05", "2026-12-12", "2026-12-26", "2027-01-09"], minPax: 1, maxPax: 20, seatsLeft: 5,
   },
   {
     slug: "tiu-kelep-waterfall-trek", name: "Tiu Kelep Waterfall Trek", destination: "Tiu Kelep", province: "Nusa Tenggara Barat", location: "Lombok Utara, NTB",

@@ -191,7 +191,7 @@ export default function SearchCard() {
           <button type="button" onClick={() => setOpen(open === "pax" ? null : "pax")} aria-expanded={open === "pax"} aria-label="Atur jumlah peserta" className="absolute inset-0 rounded-lg" />
         </Field>
 
-        <button type="submit" className="btn h-12 gap-2 self-end rounded-xl text-[15px] xl:text-[16px]">
+        <button type="submit" className="btn-scarlet h-12 gap-2 self-end rounded-xl text-[15px] xl:text-[16px]">
           <Search size={20} strokeWidth={1.5} />{mobil ? "Tanya WA" : "Cari"}
         </button>
       </form>

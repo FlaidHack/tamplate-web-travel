@@ -16,6 +16,8 @@ export const IMG = {
   banner: "/images/resort-pantai.jpg",
 };
 
+export const PROMO = { label: "PROMO", value: "20%", note: "hemat Nataru", href: "/paket?urut=termurah" };
+
 export const popular = [
   { name: "Raja Ampat", location: "Papua Barat Daya", image: "/images/raja-ampat.jpg", discount: 20, q: "Raja Ampat" },
   { name: "Telaga Derawan", location: "Berau, Kalimantan Timur", image: "/images/telaga-derawan.jpg", discount: 15, q: "Derawan" },

@@ -18,7 +18,11 @@ export default function PackageCard({ p, note }: { p: TourPackage; note?: string
         <div className="min-w-0">
           <h3 className="text-[17px] font-semibold leading-[30px] transition-colors group-hover:text-brand xl:text-[20px]">{p.name}</h3>
           <div className="mt-1 xl:mt-[9px]"><Pin text={p.location} /></div>
-          <p className="mt-1 text-[13px] text-[#8A8A93]">{durationLabel(p.days)}{note ? ` · ${note}` : ""}</p>
+          <p className="mt-1 text-[13px] text-[#8A8A93]">{durationLabel(p.days)}{note ? ` · ${note}` : ""}
+            {p.type === "open" && p.seatsLeft && p.seatsLeft <= 5 && (
+              <span className="font-medium text-scarlet"> · Sisa {p.seatsLeft} kursi</span>
+            )}
+          </p>
         </div>
         <p className="whitespace-nowrap pt-1 text-[20px] font-medium leading-[38px] xl:pt-[11px] xl:text-[24px]">{rupiahJt(p.price)}<span className="text-[13px] font-normal text-[#8A8A93] xl:text-[15px]">/Pax</span></p>
       </div>
